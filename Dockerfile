@@ -21,6 +21,9 @@ RUN apk update \
 # due to an ABI incompatibility of some kind, so we have to compile a
 # bunch of dependencies. This will be very slow.
 
+# This is based in part on the mdillon/postgis image.
+# https://hub.docker.com/r/mdillon/postgis/
+
 ENV PROJ_VERSION 6.2.0
 ENV PROJ_MD5 5cde556545828beaffbe50b1bb038480
 ENV GDAL_VERSION 3.0.1
